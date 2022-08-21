@@ -124,7 +124,7 @@ input {
 
 .labelPerfil{
     margin-top: 24px;
-    margin-left: 27-px;
+    margin-left: 45px;
 }
 
 .divSalvar{
@@ -134,6 +134,42 @@ input {
     
 }
 
+@media  (max-width:800px) {
+    .div1{
+        display: none;
+    }
+    .div2{
+        width: 100%;
+        border-radius: 10px !important;
+    }
+    .linhaCampos{
+        flex-direction: column;
+    }
+    .campos {
+        width: 90%;              
+        margin-left: 10px;
+    }
+
+
+    .salvar{
+        margin-bottom: 25px;
+    }
+
+    .painel{
+        height: 88%;
+        margin-bottom: 10px;
+     
+    }
+
+    .labelPerfil{
+        margin-left: 10px;
+    }
+    .titulo{
+        flex-direction: column;
+    }
+
+    
+}
 
 /* label {
     position: absolute;
