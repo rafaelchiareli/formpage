@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+body {
+    background-color: #ADD8E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size: 2.2rem !important;
+}
+.painel {
+    position: relative;
+    margin-top: 50px;
+    ;
+    width: 80vw;
+    height: 80vh;
+    background-color: blue;
+    display: flex;
+    border-radius: 10px;
+}
+
+.div1 {
+    height: 100%;
+    width: 45%;
+    background-color: #F5FFFA;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.div2 {
+    height: 100%;
+    width: 55%;
+    background-color: #E6E6FA;
+    float: right;
+    border-radius: 0 10px 10px 0;
+}
+
+.titulo {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px 0 15px;
+
+}
+
+.div1 img {
+    width: 70%;
+    height: 70%;
+}
+input {
+    border-radius: 10px !important;
+    height: 42px !important;
+}
+
+.myButton {
+    background-color: #7892c2;
+    border-radius: 10px;
+    border: 1px solid #4e6096;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.myButton:hover {
+    background-color: #476e9e;
+}
+
+.salvar{
+   padding: 8px 31px;
+   width: 80%;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.linhaCampos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+
+}
+
+.campos {
+    margin-top: 25px;
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.radioComLabel{    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.radioComLabel input{
+    margin-left: 10px;
+}
+
+.labelPerfil{
+    margin-top: 24px;
+    margin-left: 27-px;
+}
+
+.divSalvar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* label {
+    position: absolute;
+    top: 4px;
+    left: 55px;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.2s all;
+    cursor: text;
+    border-radius: 10px;
+}
+
+input {
+    width: 70%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #111;
+    border-radius: 10px;
+} */
+
+/* input:invalid {
+    outline: 0;
+    color: plum;
+    border-color: plum;
+}
+
+input:focus,
+input:valid {
+    border-color: purple;
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 14px;
+    top: -24px;
+    color: purple;
+} */
