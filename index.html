@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./content/css/site.css">
+    <link rel="stylesheet" href="./content/fa/css/all.css">
+    <link rel="stylesheet" href="./content/bootstrap/css/mdb.min.css">
+    <script src="./content/sa2/sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="./content/sa2/sweetalert2/dist/sweetalert2.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./content/bootstrap/js/mdb.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <div class="painel">
+        <div class="div1">
+            <img src="./content/images/logo.svg" alt="Logo">
+        </div>
+        <div class="div2">
+            <form action="#">
+                <div class="titulo">
+                    <h1>Cadastre-se</h1>
+                    <button type="button" class="myButton">
+                        <i class="fa-solid fa-door-open"></i>
+                        Entrar
+
+                    </button>
+                </div>
+                <br>
+                <div class="linhaCampos">
+                    <div class="campos ">
+                        <label>Nome</label>
+                        <input type="text" id="txtNome" class="form-control" placeholder="Digite seu nome">
+                    </div>
+                    <div class="campos ">
+                        <label>Sobrenome</label>
+                        <input type="text" id="txtSobrenome" class="form-control" placeholder="Digite seu sobrenome">
+                    </div>
+                </div>
+                <div class="linhaCampos">
+                    <div class="campos ">
+                        <label>E-mail</label>
+                        <input type="text" id="txtEmail" class="form-control" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="campos ">
+                        <label>Telefone</label>
+                        <input type="text" id="txtTelefone" class="form-control" placeholder="Digite seu telefone"
+                            pattern="\d{3}\-\d{3}\-\d{4}" data-mask="(999)-999-9999" placeholder="(999)-999-9999" />
+                    </div>
+                </div>
+                <div class="linhaCampos">
+                    <div class="campos ">
+                        <label>Senha</label>
+                        <input type="password" id="txtSenha" class="form-control" placeholder="Digite uma senha">
+                    </div>
+                    <div class="campos ">
+                        <label>Confirme sua senha</label>
+                        <input type="password" id="txtConfirmaSenha" class="form-control"
+                            placeholder="Confirme sua senha" />
+                    </div>
+                </div>
+                <div>
+
+                    <label class="labelPerfil">Perfil</label>
+                    <div class="radios">
+                        <div class="radioComLabel">
+                            <label for="chkAdmin">Admin</label>
+                            <input type="radio" id="chkAdmin">
+                        </div>
+                        <div class="radioComLabel">
+
+                            <label for="chkUsuario">Usuário</label>
+                            <input type="radio" id="chkUsuario">
+                        </div>
+
+                        <div class="radioComLabel">
+
+                            <label for="chkConvidado">Convidado</label>
+                            <input type="radio" id="chkConvidado">
+                        </div>
+                        <div class="radioComLabel">
+
+                            <label for="chkSuper">Super Admim</label>
+                            <input type="radio" id="chkSuper">
+                        </div>
+                    </div>
+                </div>
+                <div class="divSalvar">
+                    <button type="button" class="myButton salvar" onclick="limpar()"> 
+                        <i class="fa-solid fa-save"></i>
+                        Confirmar</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function limpar() {
+        Swal.fire(
+            'Sucesso!',
+            'Dados salvos com sucesso!',
+            'success'
+        ).then(function() {
+            $('.form-control').val("");
+        });
+
+      
+    }
+
+
+
+</script>
+
+</html>
